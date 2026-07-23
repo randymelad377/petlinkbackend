@@ -20,7 +20,7 @@ return [
     'allowed_methods' => ['*'],
 
     'allowed_origins' => [
-        'https://petlinkfrontend.vercel.app/'
+        'https://petlinkfrontend.vercel.app'
     ],
 
     'allowed_origins_patterns' => [],
