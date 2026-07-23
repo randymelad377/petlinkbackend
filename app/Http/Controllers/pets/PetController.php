@@ -150,7 +150,7 @@ class PetController extends Controller implements HasMiddleware
             return ApiResponse::error("Forbidden.", 403, null);
         }
 
-        if ($pet->pet_status_id !== 1 || $pet->pet_status_id !== 2) {
+        if ($pet->pet_status_id !== 1 && $pet->pet_status_id !== 2) {
             return ApiResponse::error("You are only able to edit you pet when pending or not available for other users.");
         }
         $result = $service->update($fields, $images, $pet);
