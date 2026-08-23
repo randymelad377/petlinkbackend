@@ -35,7 +35,7 @@ class StoreUserRequest extends FormRequest
             "email" => "required|email|unique:users",
             "username" => "required|unique:users|regex:/^[A-Za-z](?=.*[\d\W]).{9}$/",
             "password" => "required|confirmed",
-            "image" => "nullable|image|mimes:jpg,jpeg,png|max:2048"
+            "image" => "nullable|image|mimes:jpg,jpeg,png|max:20480"
         ];
     }
 }
